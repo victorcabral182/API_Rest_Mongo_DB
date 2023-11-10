@@ -1,8 +1,10 @@
-import mongoose from "mongoose";
+import mongoose from "mongoose"
 
-async function connectOnDatabase() {
-  mongoose.connect(process.env.DB_CONNECTION_STRING);
-  return mongoose.connection;
+async function conectaNaDatabase() {
+  mongoose.connect(
+    "mongodb+srv://admin:admin123@cluster0.prl6rfu.mongodb.net/livraria?retryWrites=true&w=majority"
+  )
+  return mongoose.connection
 }
 
-export default connectOnDatabase;
+export default conectaNaDatabase
