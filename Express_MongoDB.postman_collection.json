@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "fa2c0d98-1837-45e6-9323-6f7a237c300c",
+		"name": "Express_MongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30750280"
+	},
+	"item": [
+		{
+			"name": "livros",
+			"item": [
+				{
+					"name": "livros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/livros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "livros/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/livros/654e69355b17d68ae4fbcb00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								"654e69355b17d68ae4fbcb00"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "livros",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"autor\": \"65527c40600751e2e3586432\",\r\n    \"titulo\": \"Livro para teste\",\r\n    \"editora\": \"teste\",\r\n    \"preco\": 32.50,\r\n    \"paginas\": 60\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/livros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "livros/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"O Menino do pijama listrado\",\r\n    \"editora\": \"asd\",\r\n    \"preco\": 39.99,\r\n    \"paginas\": 182\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/livros/655260e85ea5e43d43e1c30d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								"655260e85ea5e43d43e1c30d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "livros/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/livros/655260e85ea5e43d43e1c30d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								"655260e85ea5e43d43e1c30d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "autores",
+			"item": [
+				{
+					"name": "autores",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"JRR Tolkien\",\r\n    \"nacionalidade\": \"África do Sul\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/autores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autores"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
