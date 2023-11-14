@@ -29,6 +29,37 @@
 					"response": []
 				},
 				{
+					"name": "livros/busca",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/livros/busca?editora=Charlie Brown Jr.",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								"busca"
+							],
+							"query": [
+								{
+									"key": "editora",
+									"value": "Charlie Brown Jr."
+								},
+								{
+									"key": "editora",
+									"value": "Clássicos",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "livros/:id",
 					"request": {
 						"method": "GET",
